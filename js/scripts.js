@@ -89,8 +89,16 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    
-
 
   });
+
+  $("#special-1").click(function() {
+
+    $("div#meatza-cost").append("<h2>" + "$" + movieTimeDis(newTicket) + ".00" + "</h2>");
+
+    $("#meatza-cost").text($((meatZa.subPrice()).price()));
+    $("#custom-pizza").hide();
+
+  });
+
 });

@@ -8,6 +8,22 @@ body {
 
 }
 
+img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+#custom-header {
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 4em;
+}
+
 #side-bar {
   background-color: #F7B538;
   opacity: .8;
@@ -33,7 +49,23 @@ body {
   margin-top: 10px;
 }
 
-.order-placed {
+#meatza {
+  display: none;
+}
+
+#veggie {
+  display: none;
+}
+
+#chicken-bacon {
+  display: none;
+}
+
+#three-cheese {
+  display: none;
+}
+
+#custom {
   display: none;
 }
 
