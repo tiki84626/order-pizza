@@ -9,23 +9,40 @@ body {
 }
 
 #side-bar {
-  background-color: #D8572A;
+  background-color: #F7B538;
   opacity: .8;
   height: 100%;
 
 }
 
 .col-xs-3 {
-    padding-bottom: 100%;
-    margin-bottom: -100%;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+  border: 3px solid black;
 
+}
+
+.jumbotron {
+  margin-top: 18px;
+  padding-top: 20px;
+  background-color: rgba(216, 87, 42, .8);
+  border: 3px solid black;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.order-placed {
+  display: none;
 }
 
 #pg-header {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-variant: small-caps;
-  font-size: 110px;
+  font-size: 130px;
   color: #C32F27;
   text-align: center;
   text-shadow: 6px 2px 2px black;
+  opacity: 100;
 }

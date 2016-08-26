@@ -8,6 +8,7 @@ function Pizza(pizzaSize, crustType, sauce, topping1, topping2, topping3) {
   this.topping3 = topping3;
 }
 
+//Pizza Variables
 var pizzaSizes = ['sm', 'md', 'lrg'];
 var crustTypes = ['thin', 'gf', 'handTossed', 'brooklyn'];
 var sauces = ['tomato', 'alfredo', 'garlicWhite', 'marinara'];
@@ -88,6 +89,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
+    
 
 
   });
