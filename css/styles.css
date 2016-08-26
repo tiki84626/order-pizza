@@ -1,0 +1,31 @@
+html, .container {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url(../img/background.jpg);
+
+}
+
+#side-bar {
+  background-color: #D8572A;
+  opacity: .8;
+  height: 100%;
+
+}
+
+.col-xs-3 {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+
+}
+
+#pg-header {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-variant: small-caps;
+  font-size: 110px;
+  color: #C32F27;
+  text-align: center;
+  text-shadow: 6px 2px 2px black;
+}
