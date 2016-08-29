@@ -7,7 +7,6 @@ function Pizza(pizzaSize, crustType, sauce, topping1, topping2, topping3) {
   this.topping2 = topping2;
   this.topping3 = topping3;
 }
-
 //Pizza Variables
 var pizzaSizes = ['sm', 'md', 'lrg'];
 var crustTypes = ['thin', 'gf', 'handTossed', 'brooklyn'];
@@ -15,21 +14,15 @@ var sauces = ['tomato', 'alfredo', 'garlicWhite', 'marinara'];
 var meats = ['pepperoni', 'sausage', 'beef', 'ham', 'chicken', 'bacon'];
 var cheeses = ['feta', 'cheddar', 'provolone', 'asiago'];
 var veggies = ['olives', 'mushrooms', 'redPeppers', 'onions']
-
 //Premade Pizzas
 var meatZa = new Pizza(pizzaSizes[0], crustTypes[0], sauces[0], meats[0], meats[1], meats[2]);
-
 var veggie = new Pizza(pizzaSizes[1], crustTypes[1], sauces[1], cheeses[0], veggies[0], veggies[1]);
-
 var chickenBacon = new Pizza(pizzaSizes[2], crustTypes[2], sauces[2], meats[4], veggies[3], meats[5]);
-
 var threeCheese = new Pizza(pizzaSizes[2], crustTypes[3], sauces[3], cheeses[0], cheeses[1], cheeses[2]);
-
 //Calculate Total Price
 Pizza.prototype.price = function() {
   return this.pizzaSize + this.crustType + this.sauce + this.topping1 + this.topping2 + this.topping3
 }
-
 Pizza.prototype.subPrice = function() {
   //Substitute pizza size for respective cost
   if (this.pizzaSize === 'sm') {
@@ -81,38 +74,31 @@ Pizza.prototype.subPrice = function() {
   } else if (veggies.indexOf(this.topping3) != -1){
     this.topping3 = 1;
   }
-
   return this;
 };
-
-
-
 //Front End Logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-
     var toppings = $('.topping:checkbox:checked').map(function() {
       return this.value;
     }).get();
-
     var inputtedPizzaSize = $("input[name='size']:checked").val();
     var inputtedCrustType = $("input[name='crust']:checked").val();
     var inputtedSauce = $("input[name='sauce']:checked").val();
     var inputtedTopping1 = toppings[0];
     var inputtedTopping2 = toppings[1];
     var inputtedTopping3 = toppings[2];
-
+    // New Pizza Object
     var newPizza = new Pizza(inputtedPizzaSize, inputtedCrustType, inputtedSauce, inputtedTopping1, inputtedTopping2, inputtedTopping3);
-
+    // Display Cost of New Pizza
     $(".costs").empty();
     $(".pizza-name").hide();
     $("#custom-pizza-result-cost").append("<h3>$" + newPizza.subPrice().price() + ".00</h3>");
     $("#custom-pizza-result").show();
     $("#custom-pizza").hide();
-
   });
-
+  // Display Cost of Special 1
   $("#special-1").click(function(event) {
     $(".costs").empty();
     $(".pizza-name").hide();
@@ -120,7 +106,7 @@ $(document).ready(function() {
     $("#meatza").show();
     $("#custom-pizza").hide();
   });
-
+  // Display Cost of Special 2
   $("#special-2").click(function(event) {
     $(".costs").empty();
     $(".pizza-name").hide();
@@ -128,7 +114,7 @@ $(document).ready(function() {
     $("#veggie").show();
     $("#custom-pizza").hide();
   });
-
+  // Display Cost of Special 3
   $("#special-3").click(function(event) {
     $(".costs").empty();
     $(".pizza-name").hide();
@@ -136,7 +122,7 @@ $(document).ready(function() {
     $("#chickenBacon").show();
     $("#custom-pizza").hide();
   });
-
+  // Display Cost of Special 4
   $("#special-4").click(function(event) {
     $(".costs").empty();
     $(".pizza-name").hide();
@@ -144,5 +130,4 @@ $(document).ready(function() {
     $("#threeCheese").show();
     $("#custom-pizza").hide();
   });
-
 });
