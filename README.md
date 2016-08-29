@@ -1,24 +1,28 @@
-# _Andrew P. Malkin Portfolio Website_
+# _Order Pizza_
 
-#### _This is a website that has information about Andrew P. Malkin.  It also includes some of the coding projects that he has hosted on GitHub, Aug. 5th, 2016_
+#### _Order Pizza will calculate the cost of a custom pizza or give you the price of the available specials, 8/26/16_
 
-#### By _**Andrew P. Malkin**_
+#### By _**Andrew Malkin**_
 
 ## Description
 
-_This is a website created with HTML and CSS.  The website includes the name of the author, an image of the author, a GitHub section with a list of projects and links to their respective repositories, an ABOUTME section and a way to view it online using gh-pages._
+_Order Pizza is a website that was created to display the cost of a custom pizza. Users may select size, crust, sauce, and three toppings from which a total price is calculated.  As a bonus feature, the user may also select from four set specials and their respective price will be displayed._
 
 ## Setup/Installation Requirements
 
-* _You can clone the repository and run the html locally._
-* _Or you can view the page by going to tiki84626.github.io/am-portfolio._
+* _Clone the order-pizza repository form [here](https://github.com/tiki84626/order-pizza)._
+* _Open index.html in any web-browser._
+
+## Known Bugs
+
+_There are no known bugs._
 
 ## Technologies Used
 
-_This website was written using HTML and CSS in Atom.  Bootstrap css files were used for styling.  Bootstrap js files were used for running scripts._
+_Order Pizza was created using HTML5, CSS, JavaScript, and jQuery. It was written using ATOM text editor._
 
 ### License
 
 *This software is licensed under MIT license.*
 
-Copyright (c) 2016 **_Andrew Malkin_**
+Copyright (c) 2016 **_Andrew P. Malkin_**
