@@ -18,6 +18,21 @@ _Order Pizza is a website that was created to display the cost of a custom pizza
 
 _There are no known bugs._
 
+## Specifications
+
+* _It should increase total price by the selected size price._
+    * **Example Input:** Small
+    * **Example Output:** total price + 5
+* _It should increase total price by the selected crust price._
+    * **Example Input:** Thin
+    * **Example Output:** total price + 2
+* _It should increase total price by the selected sauce price._
+    * **Example Input:** Tomato
+    * **Example Output:** total price + 1
+* _It should increase total price by the sum of the three toppings selected_
+    * **Example Input:** Pepperoni, Feta, Olives
+    * **Example Output:** total price + (3 + 2 + 1)
+
 ## Technologies Used
 
 _Order Pizza was created using HTML5, CSS, JavaScript, and jQuery. It was written using ATOM text editor._

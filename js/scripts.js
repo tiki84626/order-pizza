@@ -40,7 +40,7 @@ Pizza.prototype.subPrice = function() {
   } else if (this.crustType === 'handTossed' || this.crustType === 'brooklyn'){
     this.crustType = 3;
   }
-  //Substitute pizza crust for respective cost
+  //Substitute pizza sauce for respective cost
   if (this.sauce === 'tomato') {
     this.sauce = 1;
   } else if (this.sauce === 'alfredo') {
