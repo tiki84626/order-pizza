@@ -12,6 +12,7 @@ _Order Pizza is a website that was created to display the cost of a custom pizza
 
 * _Clone the order-pizza repository form [here](https://github.com/tiki84626/order-pizza)._
 * _Open index.html in any web-browser._
+* _Or you can open the webpage directly from [here](https://tiki84626.github.io/order-pizza/)._
 
 ## Known Bugs
 
