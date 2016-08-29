@@ -39,87 +39,107 @@
             </ul>
         </div>
 
-        <div class="col-xs-9" id="custom-pizza">
-          <div class="pizza-pic">
-            <img src="img/pizza.jpg" alt="Picture of a pizza" />
-          </div>
-          <div class="page-header">
-            <h2 id="custom-header">Create your custom Pizza!</h2>
-          </div>
-
-          <form>
-            <h2>Size:</h2>
-            <div class="form-group">
-              <label class="radio-inline"><input type="radio" name="size" id="small">Small</input></label>
-              <label class="radio-inline"><input type="radio" name="size" id="medium">Medium</input></label>
-              <label class="radio-inline"><input type="radio" name="size" id="large">Large</input></label>
+        <div class="col-xs-9">
+          <div id="custom-pizza">
+            <div class="pizza-pic">
+              <img src="img/pizza.jpg" alt="Picture of a pizza" />
             </div>
-            <br>
-            <h2>Crust:</h2>
-            <div class="form-group">
-              <label class="radio-inline"><input type="radio" name="crust" id="hand">Hand Tossed</input></label>
-              <label class="radio-inline"><input type="radio" name="crust" id="thin">Thin Crust</input></label>
-              <label class="radio-inline"><input type="radio" name="crust" id="gluten">Gluten Free</input></label>
-              <label class="radio-inline"><input type="radio" name="crust" id="brooklyn">Brooklyn Style</input></label>
-            </div>
-            <br>
-            <h2>Sauce:</h2>
-            <div class="form-group">
-              <label class="radio-inline"><input type="radio" name="sauce" id="tomato">Tomato Sauce</input></label>
-              <label class="radio-inline"><input type="radio" name="sauce" id="alfredo">Alfredo Sauce</input></label>
-              <label class="radio-inline"><input type="radio" name="sauce" id="white">White Garlic Sauce</input></label>
-              <label class="radio-inline"><input type="radio" name="sauce" id="marinara">Marinara Sauce</input></label>
-            </div>
-            <br>
-            <h2>Toppings (choose three):</h2>
-            <div class="form-group">
-              <label class="checkbox-inline"><input type="checkbox" id="tomato">Tomato Sauce</input></label>
-              <label class="checkbox-inline"><input type="checkbox" id="alfredo">Alfredo Sauce</input></label>
-              <label class="checkbox-inline"><input type="checkbox" id="white">White Garlic Sauce</input></label>
-              <label class="checkbox-inline"><input type="checkbox" id="marinara">Marinara Sauce</input></label>
-            </div>
-            <button type="submit" class="btn">Calculate Pizza Cost!</button>
-          </form>
-
-          <div id="meatza">
             <div class="page-header">
-              <h2>MeatZa!</h2>
+              <h2 id="custom-header">Create your custom Pizza!</h2>
             </div>
-            <div id="meatza-cost">
-              
+
+            <form>
+              <h2>Size:</h2>
+              <div class="form-group">
+                <label class="radio-inline"><input type="radio" name="size" value="sm">Small</input></label>
+                <label class="radio-inline"><input type="radio" name="size" value="md">Medium</input></label>
+                <label class="radio-inline"><input type="radio" name="size" value="lrg">Large</input></label>
+              </div>
+              <br>
+              <h2>Crust:</h2>
+              <div class="form-group">
+                <label class="radio-inline"><input type="radio" name="crust" value="handTossed">Hand Tossed</input></label>
+                <label class="radio-inline"><input type="radio" name="crust" value="thin">Thin Crust</input></label>
+                <label class="radio-inline"><input type="radio" name="crust" value="gf">Gluten Free</input></label>
+                <label class="radio-inline"><input type="radio" name="crust" value="brooklyn">Brooklyn Style</input></label>
+              </div>
+              <br>
+              <h2>Sauce:</h2>
+              <div class="form-group">
+                <label class="radio-inline"><input type="radio" name="sauce" value="tomato">Tomato Sauce</input></label>
+                <label class="radio-inline"><input type="radio" name="sauce" value="alfredo">Alfredo Sauce</input></label>
+                <label class="radio-inline"><input type="radio" name="sauce" value="garlicWhite">White Garlic Sauce</input></label>
+                <label class="radio-inline"><input type="radio" name="sauce" value="marinara">Marinara Sauce</input></label>
+              </div>
+              <br>
+              <h2>Toppings (choose three):</h2>
+              <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="pepperoni">Pepperoni</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="sausage">Sauage</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="beef">Beef</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="ham">Ham</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="chicken">Chicken</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="bacon">Bacon</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="feta">Feta</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="cheddar">Cheddar</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="provolone">Provolone</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="asiago">Asiago</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="olives">Olives</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="mushrooms">Mushrooms</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="redPeppers">Red Peppers</input></label>
+                <label class="checkbox-inline"><input type="checkbox" class="topping" value="onions">Onions</input></label>
+              </div>
+              <button type="submit" class="btn">Calculate Pizza Cost!</button>
+            </form>
+          </div>
+
+          <div class="pizza-name" id="meatza">
+            <div class="page-header">
+              <h1>MeatZa!</h1>
+            </div>
+            <h2>Your pizza is going to cost:</h2>
+            <div class="costs" id="meatza-cost">
             </div>
           </div>
 
-        </div>
-
-
-
-
-        <div id="veggie">
-          <div class="page-header">
-            <h2>Veggie!</h2>
+          <div class="pizza-name" id="veggie">
+            <div class="page-header">
+              <h1>Veggie!</h1>
+            </div>
+            <h2>Your pizza is going to cost:</h2>
+            <div class="costs" id="veggie-cost">
+            </div>
           </div>
-          <h3 id="veggie-cost"></h3>
-        </div>
-        <div id="chicken-bacon">
-          <div class="page-header">
-            <h2>Chicken Bacon!</h2>
-          </div>
-          <h3 id="chicken-bacon-cost"></h3>
-        </div>
-        <div id="three-cheese">
-          <div class="page-header">
-            <h2>Three Cheese!</h2>
-          </div>
-          <h3 id="three-cheese-cost"></h3>
-        </div>
-        <div id="custom">
-          <div class="page-header">
-            <h2>Your Custom Pizza!</h2>
-          </div>
-          <h3 id="custom-cost"></h3>
-        </div>
 
+          <div class="pizza-name" id="chickenBacon">
+            <div class="page-header">
+              <h1>Chicken Bacon!</h1>
+            </div>
+            <h2>Your pizza is going to cost:</h2>
+            <div class="costs" id="chickenBacon-cost">
+            </div>
+          </div>
+
+          <div class="pizza-name" id="threeCheese">
+            <div class="page-header">
+              <h1>Three Cheese!</h1>
+            </div>
+            <h2>Your pizza is going to cost:</h2>
+            <div class="costs" id="threeCheese-cost">
+            </div>
+          </div>
+
+          <div class="pizza-name" id="custom-pizza-result">
+            <div class="page-header">
+              <h1>Custom Pizza!</h1>
+            </div>
+            <h2>Your pizza is going to cost:</h2>
+            <div class="costs" id="custom-pizza-result-cost">
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
   </body>

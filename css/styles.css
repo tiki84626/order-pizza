@@ -9,8 +9,9 @@ body {
 }
 
 img {
-  width: 100%;
-  margin-bottom: 20px;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
 }
 
 form {
@@ -57,15 +58,15 @@ form {
   display: none;
 }
 
-#chicken-bacon {
+#chickenBacon {
   display: none;
 }
 
-#three-cheese {
+#threeCheese {
   display: none;
 }
 
-#custom {
+#custom-pizza-result {
   display: none;
 }
 
